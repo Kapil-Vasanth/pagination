@@ -11,7 +11,7 @@ function App() {
     fetch(URL)
       .then((res) => res.json())
       .then((data) => setEmployees(data))
-      .catch((err) => alert(err));
+      .catch((err) => alert("failed to fetch data"));
   }, []);
 
   const slicedData = (num, end) => {
